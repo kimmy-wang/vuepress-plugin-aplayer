@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 10
+
+deploy:
+  - provider: npm
+    email: 864891814@qq.com
+    api_key: $NPM_TOKEN
+    skip_cleanup: true
+    edge: true # fix missing api_key
+    on:
+      tags: true
+  - provider: releases
+    api_key: $GITHUB_TOKEN
+    skip_cleanup: true
+    edge: true # fix missing api_key
+    on:
+      tags: true
