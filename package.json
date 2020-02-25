@@ -15,6 +15,9 @@
   },
   "license": "MIT",
   "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "codecov": "codecov",
     "release": "standard-version",
@@ -35,6 +38,9 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "aplayer": "^1.10.1"
   },
   "devDependencies": {
     "@babel/core": "7.8.3",
@@ -61,6 +67,9 @@
     "typescript": "3.7.4",
     "vue-eslint-parser": "7.0.0",
     "vue-jest": "3.0.5"
+  },
+  "peerDependencies": {
+    "aplayer": "^1.10.1"
   },
   "authors": [
     "Ying Wang <upcwangying@126.com> (https://github.com/upcwangying)"
