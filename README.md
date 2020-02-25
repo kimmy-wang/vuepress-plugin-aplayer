@@ -7,6 +7,33 @@
 ![GitHub](https://img.shields.io/github/license/upcwangying/vuepress-plugin-aplayer)
 ![GitHub contributors](https://img.shields.io/github/contributors/upcwangying/vuepress-plugin-aplayer)
 
+## Install
+
+```npm
+yarn add -D vuepress-plugin-aplayer
+# OR npm install -D vuepress-plugin-aplayer
+```
+
+## Use
+
+1). `config.js`
+
+```javascript
+module.exports = {
+  plugins: ['aplayer']
+}
+```
+
+2). `*.md`, [click here](https://aplayer.js.org/) for more configuration of aplayer, .
+
+```markdown
+<a-player 
+    :options="{
+        ...
+    }"
+/>
+```
+
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
