@@ -3,20 +3,18 @@
 </template>
 
 <script>
-import APlayer from 'aplayer'
 export default {
   name: 'APlayer',
   props: {
     options: Object,
   },
-  data() {
-    return {}
-  },
   mounted() {
-    let root = this.$refs.aplayer
-    this.ap = new APlayer({
-      container: root,
-      ...this.options,
+    import('aplayer').then(({ default: APlayer }) => {
+      const root = this.$refs.aplayer
+      this.ap = new APlayer({
+        container: root,
+        ...this.options,
+      })
     })
   },
   beforeDestroy() {
